@@ -1,0 +1,69 @@
+
+### 
+GET http://127.0.0.1:8000/api/turfs/
+Accept: application/json
+
+
+### 
+POST http://127.0.0.1:8000/api/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Old Trafford",
+    "location": "Kochi",
+    "turf_type": "Football",
+    "price_per_hour": 1500,
+    "available": true
+}
+
+
+### 
+POST http://127.0.0.1:8000/api/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Sports Hub",
+    "location": "Kottayam",
+    "turf_type": "Cricket",
+    "price_per_hour": 1200,
+    "available": true
+}
+
+
+### 
+POST http://127.0.0.1:8000/api/turfs/
+Content-Type: application/json
+
+{
+    "turf_name": "Camp Nou",
+    "location": "Ernakulam",
+    "turf_type": "Football",
+    "price_per_hour": 2000,
+    "available": true
+}
+
+
+# Retrieve 
+### 
+GET http://127.0.0.1:8000/api/turfs/1/
+Accept: application/json
+
+#Update 
+
+### 
+PUT http://127.0.0.1:8000/api/turfs/1/
+Content-Type: application/json
+
+{
+    "turf_name": "Old Trafford",
+    "location": "Kochi",
+    "turf_type": "Football",
+    "price_per_hour": 1800,
+    "available": true
+}
+
+#Delete
+
+###  
+DELETE http://127.0.0.1:8000/api/turfs/3/
+Accept: application/json
